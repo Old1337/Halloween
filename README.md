@@ -11,4 +11,4 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
-![img](previw.png)
+![img](/previw.png)
