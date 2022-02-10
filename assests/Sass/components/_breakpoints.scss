@@ -1,0 +1,231 @@
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    background: var(--container-color);
+    padding: 3.5rem 0;
+    transition: 0.4s;
+    z-index: var(--z-fixed);
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+}
+
+.nav_link {
+  text-transform: uppercase;
+  font-weight: var(--font-black);
+  transform: 0.4rem;
+}
+
+.nav_link:hover {
+  color: var(--text-color);
+}
+
+.show-menu {
+  top: 0;
+}
+
+@include respond-to(xsmall) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .home_img {
+    height: 200px;
+  }
+  .home_button {
+    flex-direction: column;
+    width: max-content;
+    row-gap: 1rem;
+  }
+  .category_container,
+  .trick_container {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+}
+
+@include respond-to(medium) {
+  .about_container {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+
+  .newsletter_container {
+    display: grid;
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+  }
+  .newsletter_description {
+    padding: 0 3rem;
+  }
+}
+
+@include respond-to(medium) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 7rem 0 2rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav_img,
+  .nav_close,
+  .nav_toggle {
+    display: none;
+  }
+  .nav_list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav_link {
+    text-transform: initial;
+    font-weight: initial;
+  }
+  .home_content {
+    padding: 8rem 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .home_img {
+    height: 300px;
+  }
+  .swiper-pagination {
+    margin-top: var(--mb-2);
+  }
+  .category_container {
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+  }
+  .about_container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .about_title,
+  .about_data {
+    text-align: initial;
+  }
+  .about_img {
+    width: 250px;
+  }
+  .trick_container {
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    gap: 2rem;
+  }
+  .discount_container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 3rem 0;
+    border-radius: 3rem;
+  }
+  .discount_img {
+    width: 350px;
+    order: -1;
+  }
+  .discount_data {
+    padding-right: 6rem;
+  }
+  .newsletter_container {
+    grid-template-columns: 0.5fr;
+  }
+  .footer_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer_img-two {
+    right: inherit;
+    bottom: 0;
+    left: 15%;
+  }
+}
+
+@include respond-to(large) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 3rem;
+  }
+  .home_content {
+    padding-top: 9rem;
+    gap: 3rem;
+  }
+  .home_group {
+    padding-top: 0;
+  }
+  .home_img {
+    height: 400px;
+    transform: translateY(-3rem);
+  }
+  .home_indicator {
+    top: initial;
+    right: initial;
+    bottom: 15%;
+    left: 45%;
+  }
+  .home_indicator:after {
+    top: 0;
+    height: 75px;
+  }
+  .home_details-img {
+    bottom: 0;
+    right: 58%;
+  }
+  .home_title {
+    margin-bottom: var(--mb1-1-5);
+  }
+  .home_description {
+    margin-bottom: var(--mb-2-5);
+    padding-right: 2rem;
+  }
+  .category_container {
+    column-gap: 8rem;
+  }
+  .category_img {
+    width: 200px;
+  }
+  .about_img {
+    width: 350px;
+  }
+  .about_description {
+    padding-right: 2rem;
+  }
+
+  .trick_container {
+    gap: 3.5rem;
+  }
+  .trick_content {
+    border-radius: 1.5rem;
+  }
+  .trick_img {
+    width: 110px;
+  }
+  .trick_title {
+    font-size: var(--h3-font-size);
+  }
+  .discount_container {
+    gap: 7rem;
+  }
+  .new__content {
+    width: 310px;
+    border-radius: 1rem;
+    padding: 2rem 0;
+  }
+  .new_img {
+    width: 150px;
+  }
+  .new_img,
+  .new_subtitle {
+    margin-bottom: var(--mb-1);
+  }
+  .new_title {
+    font-size: var(--h3-font-size);
+  }
+}

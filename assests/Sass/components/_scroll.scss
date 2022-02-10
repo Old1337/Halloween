@@ -1,0 +1,32 @@
+.scroll_top {
+  display: inline-flex;
+  position: fixed;
+  bottom: 50px;
+  right: -50px;
+  background: var(--container-color);
+  padding: 0.2rem 0.2rem;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.scroll_top:hover {
+  opacity: 1;
+}
+.show_scroll {
+  right: 30px;
+}
+.scroll-arrow {
+  color: var(--title-color);
+  font-size: 1.75rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background: #413e3e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272525;
+  border-radius: 0.5rem;
+}
