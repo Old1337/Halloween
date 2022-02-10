@@ -11,4 +11,4 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
-![Halloween](https://ibb.co/W0NZqwX)
+![img](https://ibb.co/W0NZqwX)
