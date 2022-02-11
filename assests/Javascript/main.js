@@ -99,3 +99,20 @@ function scrollUp() {
 }
 
 window.addEventListener("scroll", scrollUp);
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((reveal) => {
+    let windowHeight = window.innerHeight,
+      elementHeight = reveal.getBoundingClientRect().top;
+    console.log(elementHeight);
+    console.log(windowHeight);
+    if (elementHeight < windowHeight) {
+      reveal.classList.add("active");
+    } else {
+      reveal.classList.remove("active");
+    }
+  });
+}
+window.addEventListener("scroll", reveal);
